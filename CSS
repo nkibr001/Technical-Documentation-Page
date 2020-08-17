@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html
+{
+  width:100%;
+  margin:0px;
+}
+body
+{
+  background:#f5efef;
+  font-size:15px;
+  font-family: 'Open Sans', sans-serif;
+}
+#navbar header
+{
+  background:white;
+  font-size:30px;
+  text-align:center;
+  font-family:arial;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+#navbar {
+  position: fixed;
+  min-width:200px;
+  top: 0px;
+  left: 0px;
+  width: 210px;
+  height: 100%;
+  border-right: solid;
+  border-right-width:5px;
+  border-color:#a06a6a;
+  font-family:monospace;
+  font-size:20px;
+  z-index:200;
+  background:#d7c1c1;
+}
+
+#navbar ul
+{
+  height:90%;
+  width:100%;
+  list-style:none;  
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li
+{  
+  left:-40px;
+  border-top:1px solid;
+  position:relative;
+  width:100%;
+}
+#navbar li:hover
+{
+  background:#c3a2a2;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #1f1414;
+  text-decoration: none;
+}
+
+.dropbtn
+{ 
+  background:#d7c1c1;
+  font-family:monospace;
+  font-size:20px;
+  border:none;
+  width:210px;
+  height:100%;
+  display:block;
+  padding: 10px 30px; 
+  color:#1f1414;
+}
+#d
+{
+  padding-right:100px;
+}
+.dropbtn:hover
+{
+    background:#c3a2a2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebe0e0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width:190px;
+
+}
+.dropdown-content a {
+  color: #1f1414;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover 
+{
+  background-color: #e1d0d0;
+}
+.dropdown:hover .dropdown-content 
+{
+  display: block;  
+}
+
+#main-doc
+{
+  position:absolute;
+  padding: 20px;
+  margin-bottom: 110px;
+  margin-left: 310px;
+}
+
+#top
+{
+  font-size:30px;
+  color:#290a0a;
+  font-weight:600;
+}
+.main-section header
+{
+  font-size:25px;
+  color:#150505;
+  font-weight:500;
+}
+.main-section p
+{
+  font-size:15px;
+  color:#3e0f0f;
+}
+code
+{
+  display:block;
+  background:#fdf7f7;
+  position:relative;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+#image
+{
+  height:300px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 200;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
