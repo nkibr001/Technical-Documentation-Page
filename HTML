@@ -1,0 +1,149 @@
+<nav id="navbar">
+  <header id="head"> HTML</header>
+  <ul>
+    <li><a class="nav-link" href="#Intro">Introduction</a></li>
+    <div id="head"></div>
+     <li><a class="nav-link" href="#Meta">Metadata</a></li>
+
+    
+    <li><a class="nav-link"href="#Tags"> Tags</a>
+     </li>
+    
+  <li>  <div class="dropdown">
+  <button class="dropbtn" id="d" type="checkbox">Tags:sub</button>
+  <div class="dropdown-content">
+    <a href="#a">a</a>
+    <a href="#ar">article</a>
+    <a href="#au">audio</a>
+    <a href="#bo">body</a>
+    <a href="#bu">button</a>
+    <a href="#di">div</a>
+    <a href="#fo">form</a>
+    <a href="#he">head</a>
+    <a href="#her">header</a>
+    <a href="#im">img</a>
+    <a href="#in">input</a>
+    <a href="#la">label</a>
+    <a href="#ma">main</a>
+    <a href="#ti">title</a>
+
+  </div>
+    </div> </li> 
+      <li> <a class="nav-link"href="#Att">Attributes</a></li>
+    
+    <li><a class="nav-link"href="#Style" style="border-bottom:1px solid">Style</a></li> 
+  </ul>
+</nav>
+  
+<main id="main-doc">
+  
+  <section class="main-section" id="Intro">
+    <header id="top">Introduction</header>
+    <article>
+      <p> This will be a small overview of HTML ~ To be honest, this is more for myself since I find myself being confused over topics such as classes and tags. So it won't be good for any beginner or anyone that wants a full scope - but I hope this provides some use for those that stumble across this~</p>
+      <p> HTML stands for Hypertext Markup Language and is used to create webpages. It tells the browser how to display content. To make it more appealing, other languages such as CSS and Javascript can be used.</p>
+    </article></section>
+  <br><br><br>
+    <section class="main-section" id="Meta">
+    <header id="top">Metadata</header>
+    <p>Metadata is information about the data on the document. It won't always be visually displayed but its machine parsable so it's often used by search engines.</p></section>
+      <br><br><br><br>
+  <section class="main-section" id="Tags">
+    <header id="top">Tags</header>
+    <article>
+      <p>Tags are keywords that define how the content is displayed and formatted. It consists of two parts - and opening and closing tag.</p>
+      <br>
+      <p> Example</p>
+        <code> &lt;h1&gt;	Header 	&lt;\h1&gt; </code>
+      <p> Will appear as </p>
+      <code> <h1>Header</h1></code>
+   <p> There are different types are tags that are used in HTML - here are the most common ones I've seen so far </p>
+      <br><br>
+      <header id="a"> &lt;a&gt; Tags </header>
+      <p> This is used to create a hyperlink</p>
+      <code>  &lt;a href="https://codepen.io/NK013/full/oNbewPw"Click this link!  &gt; &lt;/a&gt;</code>
+      <p> Will appear as</p>
+      <code> <a href= "https://codepen.io/NK013/full/oNbewPw"> Click this link!</a></code>
+      <br><br>
+      <header id="ar"> &lt;article&gt; Tags</header>
+      <p> The article tag contains its own information and composition in a webpage. It can also be distrubuted on other websites as its own unit. Its function is similar to a div (discussed later) but the article tag provides readable info to screen-readers,search engines, and third-party apps. </p>
+        <br><br>
+      <header id="au"> &lt;audio&gt; Tags</header>
+      <p> This tag is used to embed audio into the webpage</p>
+      <code>&lt;audio controls&gt;
+        &lt;source src ="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"&gt;
+        &lt;/audio&gt;</code>
+      <p> Will appear as</p>
+      <code>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio></code>
+     <br><br>
+      <header id="bo"> &lt;body&gt; Tags</header>
+      <p>This is used to define all of the contents in a document. For an article tag, it would be put under the body tag considering the body is encompassing most of the information. There can only be one body in a HTML document.</p>
+      <br>
+      <header id="bu">&lt;button&gt; Tags</header>
+      <p> This creates a clickable button. To give it meaning, you need to specify its type which falls under 3 categories: button, reset, and submit. Button makes it a clickable button. Reset resets the data to its original form. Submit allows for data to be submitted.</p>
+      <code> &lt;button type="button"&gt;Click! &lt;\button&gt; </code>
+      <p> Will appear as </p>
+      <code><button type="button">Click!</button></code>
+      <br><br>
+      <header id="di"> &lt;div&gt; Tags</header>
+      <p> Div tags are used to specify sections in a document. However, it's not the same as a section tag. Divs don't convey any meaning the way that section tags do. It simply is there to just help create a block of information.</p>
+      <br><br>
+      <header id="fo">  &lt;form&gt; Tags</header>
+      <p> Form tags are used to receive data from the user. This is consists of various ways of receiving data such as through clicking options or getting text from the user.</p>
+      <br>
+            <header id="he"> &lt;head&gt; Tags</header>
+      <p> Head tags are used to to contain data about the document (metadata) and isn't visually displayed.</p>
+      <br><br>
+      <header id="her">&lt;header&gt; Tags</header>
+      <p>The header tag contains introductory info.</p>
+      <br><br>
+      <header id="im"> &lt;img&gt; Tags</header>
+      <p> Img tags are used to display images on webpages. Src is used to link the path to the image while alt id is used to replace the image with text in the case it doesn't display properly.</p>
+      <code> &lt;img&gt; id="image" src= "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fc9bad07-819c-43d7-a770-aac5b07cca8f/de07l4l-dc078463-1d27-4b56-8f97-2af459fd234c.png? token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphc HA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZmM5YmFkMDctODE5Yy00M2Q3LWE3NzAtYWFjNWIwN2NjYThmXC9kZTA3bDRsLWRjMDc4NDYzLT FkMjctNGI1Ni04Zjk3LTJhZjQ1OWZkMjM0Yy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.dUiXijOQAD8O8Os-tQvFqqUOnRm2heFM3lLdQ123PJ8" alt id="a cute grub"&gt;  </code>
+        <p>Will appear as</p>
+        <code><img id="image" src= "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fc9bad07-819c-43d7-a770-aac5b07cca8f/de07l4l-dc078463-1d27-4b56-8f97-2af459fd234c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZmM5YmFkMDctODE5Yy00M2Q3LWE3NzAtYWFjNWIwN2NjYThmXC9kZTA3bDRsLWRjMDc4NDYzLTFkMjctNGI1Ni04Zjk3LTJhZjQ1OWZkMjM0Yy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.dUiXijOQAD8O8Os-tQvFqqUOnRm2heFM3lLdQ123PJ8" alt id="a cute grub"> </code>
+      <br><br>
+      <header id="in">&lt;input&gt; Tags</header>
+      <p> This tag is used to receive input from the user. To give it a value, a type is assigned to it based on the information desired. This ranges from regular text inputs to specific information like email. Its use is important in form elements. </p>
+       <br><br>
+      <code> &lt;label for="first"&gt;First name &lt;label&gt;
+        &lt;input type="text"id="first"name="first"&gt; </code>
+      <p> Will appear as</p>
+      <code><label for="first"> First name</label> <input type="text"id="first"name="first"></code>
+      
+      <header id="la"> &lt;label&gt; Tags</heade>
+      <p>Label tags are used to receive user input and is combined with the input tags. Screenreaders are able to read labels making it easy for assistive tech to understand the inputted data. The for attribute has to be the same as the id in order for it to be fully binded.</p>
+      <br><br>
+      <header id="ma">&lt;main&gt; Tags</header>
+      <p>This tag is used for the main content of a document. It's easy to confuse this with the body tag, but the difference between the two is that the main tag is used to indicate unique information of the webpage. It can be placed inside the body tags. The body tag just simply consists of content.</p>
+      <br>
+      <header id="ti">&lt;title&gt; Tags</header>
+      <p>This tag is used to title the document - which can be confused with the header tag. The difference is the title tag contains metadata, which helps search engines find the webpage. The header tags appear within the webpage's text. Search engines give title tags more importance than header tags.</p>
+      <br><br><br>
+    <section class="main-section" id="Att">
+<header id="top">Attributes</header>
+      <p>Attributes provide extra info about the elements being used. I will be talking about attributes that fall under certain tags rather than universal attributes. </p>
+      <br>
+      <header>class</header>
+      <p>The class attribute can be used on multiple elements. It's used to point to a class name in a style sheet (using .(classname)). Elements can belong to more than one class.</p>
+      <br>
+      <header>for</header>
+      <p>This attribute specifies which form element a label is bounded to. The for attribute of the label needs to be the same as the input's id. </p>
+      <br>
+      <header>id</header>
+      <p>It attributes a specific id to an element. It's used mostly to point to a style in a stylesheet (using #). To associate a label with an input element you need to give the input an id.</p>
+      <br>
+      <header>name</header>
+      <p>The name attribute is used to reference elements. Form elements with a name have their values passed once it's submitted.</p>
+      <br>
+      <header>type</header>
+      <p>This specifies the type of elements to display. This ranges from buttons to urls.</p>
+      </section>
+      
+          <br><br><br>
+    <section class="main-section" id="Style">
+<header id="top">Style</header>
+      <p>On its own, HTML appears very dull - which is where CSS comes in. CSS can help brighten up webpages and attract users.</p>
+      </section>
